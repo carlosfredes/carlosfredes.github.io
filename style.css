@@ -316,7 +316,7 @@ nav ul li a:hover {
 	margin-top: 300px;
 }
 
-.services h6 {
+.services h2 {
 	font-family: Poppins-SemiBold, sans-serif;
 	font-size: 40px;
 	text-align: center;
@@ -371,7 +371,7 @@ nav ul li a:hover {
 	font-family: Poppins, sans-serif;
 }
 
-.skills-title h1 {
+.skills-title h2 {
 	font-family: Poppins-SemiBold, sans-serif;
 	color: var(--white-1);
 	margin: 120px 0 0 0;
@@ -421,7 +421,7 @@ nav ul li a:hover {
 	margin: 2px 5em;
 }
 
-.projects-title h3 {
+.projects-title h2 {
 	font-family: Poppins-SemiBold, sans-serif;
 	color: var(--white-1);
 	margin: 120px 0 0 0;
@@ -447,7 +447,7 @@ nav ul li a:hover {
 	text-align: center;
 	margin: 15px 35px 0 0;
 	min-width: 370px;
-	min-height: 300px;
+	min-height: 320px;
 	padding: 12px 8px;
 	background-color: var(--white-1);
 	border-radius: 8px;
@@ -519,11 +519,6 @@ nav ul li a:hover {
 		margin: 350px 0 0;
 	}
 
-	.services h2 {
-		width: auto;
-		margin: 20px;
-	}
-
 	.whatido-section {
 		display: block;
 		flex-direction: unset;
@@ -534,13 +529,44 @@ nav ul li a:hover {
 		text-align: center;
 		width: auto;
 		min-width: 250px;
-		min-height: 370px;
 		border-radius: 0px;
 	}
 
 	.skills {
+		margin: 2px 0px;
+	}
+
+	.skill-section {
 		margin: 2px 16px;
 	}
+
+	.skills-title h2 {
+		margin: 180px 0 0 0;
+		width: 100%;
+	}
+
+	.skills-title p {
+		margin: 40px 16px;
+	}
+
+	.projects {
+		margin: 2px 0px;
+	}
+
+	.projects-title h2 {
+		margin: 20px 0;
+	}
+
+	.projects-title p {
+		margin: 40px 5px;
+		text-align: center;
+	}
+
+	.project {
+		min-width: 100%;
+		border-radius: 0px;
+	}
+
 }
 /* --------------HOME-------------- */
 
