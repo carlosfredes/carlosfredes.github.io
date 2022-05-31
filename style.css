@@ -98,13 +98,23 @@ p {
 
 .button {
 	margin-top: 50px;
-	background-color: var(--white-2);
+	background-color: var(--primary-color);
 	display: inline-block;
-	color: var(--gray-2);
+	color: var(--white-1);
 	font-size: 15px;
 	font-family: Raleway, sans-serif;
 	padding: 8px 16px;
+	border-radius: 24px;
 }
+
+	.button:hover {
+		background-color: var(--secondary-color);
+		transition: background .8s;
+	}
+
+	.button i {
+		color: var(--white-1);
+	}
 
 .section-footer-1 i {
 	margin: 15px 0;
@@ -260,19 +270,15 @@ nav ul li a:hover {
 /* --------------HOME-------------- */
 
 .introduction {
-	display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+	display: inline-block;
     height: 70vh;
-    min-width: 10rem;
-    z-index: -1;
+	margin-top: 250px;
 }
 
 .main {
 	display: inline-block;
 	user-select: none;
-	width: 45vw;
+	margin: 0px 5rem;
 }
 
 .main h4 {
@@ -305,10 +311,6 @@ nav ul li a:hover {
 		color: var(--white-1);
 		transition: background .8s, color .8s;
 	}
-
-.img-cf img {
-	height: 16rem;
-}
 
 .services {
 	display: block;
@@ -402,19 +404,11 @@ nav ul li a:hover {
 	vertical-align: middle;
 }
 
-.skill p:first-child {
+.skill p {
 	font-family: Poppins, sans-serif;
 	font-size: 20px;
 	color: var(--gray-2);
 	margin-bottom: 0px;
-}
-
-.skill p:nth-child(2) {
-	font-size: 17px;
-	color: var(--gray-1);
-	margin-bottom: 32px;
-	margin-left: 37px;
-	font-family: Poppins, sans-serif;
 }
 
 .projects {
@@ -487,14 +481,12 @@ nav ul li a:hover {
 
 @media (max-width: 858px) {
 	.introduction {
-		flex-direction: column-reverse;
-    	height: auto;
     	padding: 1rem;
     	text-align: center;
 	}
 
 	.main {
-		width: 70%;
+		margin: 0px 15px;
 	}
 
 	.main h1 {
@@ -502,16 +494,6 @@ nav ul li a:hover {
 		font-family: Hurricane, sans-serif;
 		line-height: 80px;
 		margin: 18px 16px 0;
-	}
-
-	.main a {
-		font-size: 20px;
-	}
-
-	.img-cf img {
-		margin: 85px 0 2rem;
-		padding-left: 10px;
-		height: 14rem;
 	}
 
 	.services {
