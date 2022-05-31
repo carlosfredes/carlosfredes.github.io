@@ -9,6 +9,7 @@
 	list-style: none;
 	text-decoration: none;
 	color: var(--gray-1);
+	scroll-behavior: smooth;
 }
 
 *::selection {
@@ -18,7 +19,6 @@
 
 body {
 	background-color: #FFF;
-	scroll-behavior: smooth;
 	font-size: 1.2rem;
 	line-height: 1.4em;
 }
