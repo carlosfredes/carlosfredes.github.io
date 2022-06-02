@@ -62,11 +62,6 @@ p {
 	src: url('./assets/fonts/Fredoka.ttf') format('truetype');
 }
 
-@font-face {
-	font-family: Playfair Display;
-	src: url('./assets/fonts/PlayfairDisplay.ttf') format('truetype');
-}
-
 ::-webkit-scrollbar {
 	width: 18px;
 }
@@ -336,14 +331,15 @@ nav ul li a:hover {
 
 .whatido-section {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .whatido{
+	flex: 1;
+	height: 300px;
+	min-width: 380px;
 	text-align: center;
-	margin: 15px 35px 0 0;
-	min-width: 370px;
-	min-height: 300px;
+	margin: 10px;
 	padding: 12px 8px;
 	background-color: var(--white-1);
 	border-radius: 8px;
@@ -434,14 +430,15 @@ nav ul li a:hover {
 
 .projects-section {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .project {
+	flex: 1;
 	text-align: center;
-	margin: 15px 35px 0 0;
+	margin: 15px;
 	min-width: 370px;
-	min-height: 320px;
+	height: 320px;
 	padding: 12px 8px;
 	background-color: var(--white-1);
 	border-radius: 8px;
@@ -478,7 +475,6 @@ nav ul li a:hover {
 	}
 
 
-
 @media (max-width: 858px) {
 	.introduction {
     	padding: 1rem;
@@ -508,8 +504,6 @@ nav ul li a:hover {
 
 	.whatido {
 		margin: 20px 0px;
-		text-align: center;
-		width: auto;
 		min-width: 250px;
 		border-radius: 0px;
 	}
@@ -556,16 +550,16 @@ nav ul li a:hover {
 
 .contact-section {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .contact-box {
+	flex: 1;
 	margin: 100px 25px;
-	padding: 30px 5px;
+	padding: 30px;
 	text-align: center;
-	min-width: 300px;
-	min-height: 200px;
+	min-width: 310px;
+	height: 200px;
 	background-color: var(--white-1);
 	border-radius: 8px;
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -584,14 +578,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1060px) {
-
-	.contact-section {
-		flex-direction: column;
-		align-items: center;
-	}
-
 	.contact-box {
-		max-width: 400px;
 		margin: 80px 25px;
 	}
 }
