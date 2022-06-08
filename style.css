@@ -438,8 +438,8 @@ nav ul li a:hover {
 .project {
 	flex: 1;
 	text-align: center;
-	margin: 15px;
-	min-width: 370px;
+	margin: 10px;
+	min-width: 380px;
 	height: 320px;
 	padding: 12px 8px;
 	background-color: var(--white-1);
@@ -495,7 +495,6 @@ nav ul li a:hover {
 
 	.whatido-section {
 		display: block;
-		flex-direction: unset;
 	}
 
 	.whatido {
@@ -520,6 +519,10 @@ nav ul li a:hover {
 	.skills-title p {
 		text-align: center;
 		margin: 40px 16px;
+	}
+
+	.projects-section {
+		display: block;
 	}
 
 	.projects {
