@@ -540,8 +540,8 @@ nav ul li a:hover {
 	}
 
 	.project {
-		width: 100%;
-		margin: 0px;
+		min-width: 250px;
+		margin: 20px 0px;
 		border-radius: 0px;
 	}
 
