@@ -485,8 +485,7 @@ nav ul li a:hover {
 
 	.line {
 		width: 100%;
-		font-size: clamp(1.3rem, 3vw, 4rem);
-		border-right: none;
+		font-size: clamp(1.1rem, 2.8vw, 3.8rem);
 	}
 
 	.services {
@@ -514,11 +513,12 @@ nav ul li a:hover {
 	}
 
 	.skills-title h2 {
+		text-align: center;
 		margin: 180px 0 0 0;
-		width: 100%;
 	}
 
 	.skills-title p {
+		text-align: center;
 		margin: 40px 16px;
 	}
 
@@ -527,6 +527,7 @@ nav ul li a:hover {
 	}
 
 	.projects-title h2 {
+		text-align: center;
 		margin: 120px 0 0 0;
 	}
 
