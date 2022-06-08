@@ -1,7 +1,7 @@
 /* --------------GENERAL-------------- */
 
 * {
-	font-family: Fredoka, sans-serif;
+	font-family: Roboto, sans-serif;
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
@@ -14,7 +14,7 @@
 
 *::selection {
 	color: #FFF;
-	background-color: var(--gray-2);
+	background-color: var(--gray-1);
 }
 
 body {
@@ -29,38 +29,35 @@ p {
 }
 
 :root {
-	--primary-color: #1F6AAC;
-	--secondary-color: #22B8CF;
+	--primary-color: #007BFF;
+	--secondary-color: #00B2FF;
 	--white-1: #FFF;
 	--white-2: #F9F9F9;
-	--gray-1: #677381;
-	--gray-2: #2A272A;
+	--gray-1: #595959;
+	--gray-2: #191919;
 }
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @font-face {
 	font-family: Poppins;
 	src: url('./assets/fonts/Poppins.ttf') format('truetype');
 }
-
 	@font-face {
-		font-family: Fredoka;
-		src: url('./assets/fonts/Fredoka.ttf') format('truetype');
+		font-family: Poppins-SemiBold;
+		src: url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
 	}
 
 @font-face {
-	font-family: Poppins-SemiBold;
-	src: url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+	font-family: Raleway;
+	src: url('./assets/fonts/Raleway.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: Hurricane;
-	src: url('./assets/fonts/Hurricane.ttf') format('truetype');
+	font-family: SourceCodePro;
+	src: url('./assets/fonts/SourceCodePro.ttf') format('truetype');
 }
-
-@font-face {
-	font-family: Fredoka;
-	src: url('./assets/fonts/Fredoka.ttf') format('truetype');
-}
+/* Fonts */
 
 ::-webkit-scrollbar {
 	width: 18px;
@@ -69,12 +66,12 @@ p {
 ::-webkit-scrollbar-track {
 	height: 100%;
 	width: 18px;
-	background: #F2F2F2;
+	background: var(--gray-2);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(to bottom, #1F6AAC 3%, #22B8CF 97%);
-	border: 5px solid #F2F2F2;
+	background: linear-gradient(to bottom, #007BFF 3%, #00B2FF 97%);
+	border: 5px solid var(--gray-2);
 	border-radius: 8px;
 }
 /* --------------GENERAL-------------- */
@@ -130,8 +127,7 @@ p {
 
 /* --------------HEADER-------------- */
 nav {
-	background-color: rgba(255,255,255,0.4)!important; 
-  	backdrop-filter: saturate(180%) blur(20px);
+	background-color: var(--white-1); 
 	height: 60px;
 	width: 100%;
 	position: fixed;
@@ -160,7 +156,7 @@ nav ul li {
 nav ul li a {
 	color: var(--gray-2);
 	font-size: 14px;
-	font-family: Poppins, sans-serif;
+	font-family: Poppins-SemiBold, sans-serif;
 	letter-spacing: 1px;
 	font-weight: 400;
 	padding: 7px 13px;
@@ -194,8 +190,8 @@ nav ul li a:hover {
 	padding: 6px 11px;
 	color: var(--gray-2);
 	font-size: 14px;
-	font-family: Poppins, sans-serif;
-	border: 1px solid #BFBFBF;
+	font-family: Poppins-SemiBold, sans-serif;
+	border: 1px solid var(--gray-2);
 	border-radius: 8px;
 }
 
@@ -265,46 +261,67 @@ nav ul li a:hover {
 /* --------------HOME-------------- */
 
 .introduction {
-	display: inline-block;
-    height: 70vh;
-	margin-top: 250px;
+	margin: 0;
+	padding-top: 250px;
+	background-image: url(./assets/images/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 
 .main {
-	display: inline-block;
+	display: grid;
+	place-content: center;
+	text-align: center;
 	user-select: none;
-	margin: 0px 5rem;
 }
-
-.main h4 {
-	font-family: Poppins, sans-serif;
-	font-weight: 300;
-    font-size: 2rem;
-}
-
 .main h1 {
-	font-family: Hurricane, sans-serif;
-	font-size: 125px;
-	line-height: 120px;
-}
-
-.main p {
-	font-family: Fredoka, sans-serif;
-	font-size: 26px;
-}
-
-.main a {
-	font-family: Poppins-SemiBold, sans-serif;
-	font-size: 19.2px;
 	color: var(--white-1);
-	padding: 8px 20px;
-	border-radius: 20px;
-	background-color: var(--primary-color);
+	background-color: rgba(0, 0, 0, 0.2);
+	font-family: SourceCodePro, monospace;
 }
-	.main a:hover {
-		background-color: var(--secondary-color);
-		color: var(--white-1);
-		transition: background .8s, color .8s;
+
+.main span {
+	font-family: SourceCodePro, monospace;
+	background: linear-gradient(to left, var(--primary-color),var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: #0000;
+}
+
+.line {
+	position: relative;
+	margin: 0 auto;
+	width: 24em;
+	line-height: 70px;
+	font-size: clamp(1.3rem, 3vw, 4.5rem);
+	border-right: 2px solid rgba(255,255,255,0.75);
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+	.anim-typewriter {
+		animation:
+		 typewriter 4s steps(25) 1s 1 normal both,
+		 blinkTextCursor 500ms steps(25) infinite normal;
+	}
+
+	@keyframes typewriter {
+		from {
+			width: 0;
+		}
+		to { 
+			width: 15em;
+		}
+	}
+
+	@keyframes blinkTextCursor {
+		from {
+			border-right-color: rgba(255,255,255,0.75);
+		}
+		to {
+			border-right-color: transparent;
+		}
 	}
 
 .services {
@@ -315,16 +332,12 @@ nav ul li a:hover {
 
 .services h2 {
 	font-family: Poppins-SemiBold, sans-serif;
-	font-size: 40px;
-	text-align: center;
-	color: var(--white-1);
-	background-color: var(--gray-2);
-	height: 70px;
-	padding: 22px 0;
+	color: var(--gray-2);
+	font-size: 34px;
 }
 
 .services p {
-	margin: 40px 2px;
+	margin: 20px 2px 50px 2px;
 	font-family: Raleway, sans-serif;
 	font-size: 24px;
 }
@@ -360,29 +373,24 @@ nav ul li a:hover {
 
 .whatido p:nth-child(3) {
 	font-size: 18px;
+	font-family: Roboto, sans-serif;
 	color: var(--gray-1);
-	font-family: Poppins, sans-serif;
 }
 
 .skills {
 	margin: 2px 5em;
-	font-family: Poppins, sans-serif;
 }
 
 .skills-title h2 {
 	font-family: Poppins-SemiBold, sans-serif;
-	color: var(--white-1);
+	color: var(--gray-2);
 	margin: 120px 0 0 0;
-	padding: 22px 0px;
-	font-size: 40px;
-	text-align: center;
-	height: 70px;
-	background-color: var(--gray-2);
+	font-size: 34px;
 }
 
 .skills-title p {
 	font-family: Raleway, sans-serif;
-	margin: 40px 0px;
+	margin: 20px 2px 50px 2px;
 	font-size: 24px;
 }
 
@@ -401,9 +409,7 @@ nav ul li a:hover {
 }
 
 .skill p {
-	font-family: Poppins, sans-serif;
 	font-size: 20px;
-	color: var(--gray-2);
 	margin-bottom: 0px;
 }
 
@@ -413,18 +419,14 @@ nav ul li a:hover {
 
 .projects-title h2 {
 	font-family: Poppins-SemiBold, sans-serif;
-	color: var(--white-1);
+	color: var(--gray-2);
 	margin: 120px 0 0 0;
-	padding: 22px 0px;
-	font-size: 40px;
-	text-align: center;
-	height: 70px;
-	background-color: var(--gray-2);
+	font-size: 34px;
 }
 
 .projects-title p {
 	font-family: Raleway, sans-serif;
-	margin: 40px 0px;
+	margin: 20px 2px 50px 2px;
 	font-size: 24px;
 }
 
@@ -456,7 +458,6 @@ nav ul li a:hover {
 }
 
 .project p {
-	font-family: Poppins, sans-serif;
 	font-size: 18px;
 }
 
@@ -476,20 +477,16 @@ nav ul li a:hover {
 
 
 @media (max-width: 858px) {
+
 	.introduction {
-    	padding: 1rem;
-    	text-align: center;
+		width: 100%;
+		background-image: url(./assets/images/background-1.jpg);
 	}
 
-	.main {
-		margin: 0px 15px;
-	}
-
-	.main h1 {
-		font-size: 95px;
-		font-family: Hurricane, sans-serif;
-		line-height: 80px;
-		margin: 18px 16px 0;
+	.line {
+		width: 100%;
+		font-size: clamp(1.3rem, 3vw, 4rem);
+		border-right: none;
 	}
 
 	.services {
