@@ -274,6 +274,7 @@ nav ul li a:hover {
 	place-content: center;
 	text-align: center;
 	user-select: none;
+	cursor: text;
 }
 .main h1 {
 	color: var(--white-1);
