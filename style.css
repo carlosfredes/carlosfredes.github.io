@@ -274,12 +274,12 @@ nav ul li a:hover {
 	place-content: center;
 	text-align: center;
 	user-select: none;
-	cursor: text;
 }
 .main h1 {
 	color: var(--white-1);
 	background-color: rgba(0, 0, 0, 0.2);
 	font-family: SourceCodePro, monospace;
+	cursor: text;
 }
 
 .main span {
@@ -567,6 +567,11 @@ nav ul li a:hover {
 	color: var(--gray-2);
 	font-size: 18px;
 	padding: 18px 0;
+}
+
+.contact-box a:hover {
+	color: var(--primary-color);
+	transition: color .8s;
 }
 
 @media (max-width: 1060px) {
