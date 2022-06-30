@@ -99,6 +99,10 @@ p {
 	border-radius: 24px;
 }
 
+	.button font {
+		color: var(--white-1);
+	}
+
 	.button:hover {
 		background-color: var(--secondary-color);
 		transition: background .8s;
@@ -117,7 +121,7 @@ p {
 	text-align: center;
 }
 
-.section-footer-2 p {
+.section-footer-2 p, .section-footer-2 p font {
 	color: var(--white-1);
 	display: block;
 	text-align: center;
@@ -320,13 +324,13 @@ nav ul li a:hover {
 	margin-top: 300px;
 }
 
-.services h2 {
+.services h2, .services h2 font {
 	font-family: Poppins-SemiBold, sans-serif;
 	color: var(--gray-2);
 	font-size: 34px;
 }
 
-.services p {
+.services p, .services p font {
 	margin: 20px 2px 50px 2px;
 	font-family: Raleway, sans-serif;
 	font-size: 24px;
@@ -371,34 +375,34 @@ nav ul li a:hover {
 	margin: 2px 5em;
 }
 
-.skills-title h2 {
+.skills-title h2, .skills-title h2 font {
 	font-family: Poppins-SemiBold, sans-serif;
 	color: var(--gray-2);
 	margin: 120px 0 0 0;
 	font-size: 34px;
 }
 
-.skills-title p {
+.skills-title p, .skills-title p font {
 	font-family: Raleway, sans-serif;
 	margin: 20px 2px 50px 2px;
 	font-size: 24px;
 }
 
-.skill-section h3 {
+.skill-section h3, .skill-section h3 font {
 	font-size: 26px;
 	font-family: Poppins-SemiBold, sans-serif;
 	color: var(--primary-color);
 	margin: 25px 0px;
 }
 
-.skill span {
+.skill span, .skill span font {
 	color: var(--secondary-color);
 	padding-bottom: 5px;
 	font-size: 32px;
 	vertical-align: middle;
 }
 
-.skill p {
+.skill p, .skill p font {
 	font-size: 20px;
 	margin-bottom: 0px;
 }
@@ -407,14 +411,14 @@ nav ul li a:hover {
 	margin: 2px 5em;
 }
 
-.projects-title h2 {
+.projects-title h2, .projects-title h2 font {
 	font-family: Poppins-SemiBold, sans-serif;
 	color: var(--gray-2);
 	margin: 120px 0 0 0;
 	font-size: 34px;
 }
 
-.projects-title p {
+.projects-title p, .projects-title p font {
 	font-family: Raleway, sans-serif;
 	margin: 20px 2px 50px 2px;
 	font-size: 24px;
@@ -447,11 +451,11 @@ nav ul li a:hover {
 	font-size: 20px;
 }
 
-.project p {
+.project p, .project p font {
 	font-size: 18px;
 }
 
-.project a {
+.project a, .project a font {
 	font-family: Poppins-SemiBold, sans-serif;
 	color: var(--white-1);
 	background-color: var(--primary-color);
@@ -460,7 +464,7 @@ nav ul li a:hover {
 	font-size: 16px;
 }
 
-	.project a:hover {
+	.project a:hover, .project a font:hover {
 		background-color: var(--secondary-color);
 		transition: background .8s;
 	}
