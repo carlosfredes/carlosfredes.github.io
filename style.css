@@ -395,7 +395,7 @@ nav ul li a:hover {
 	margin: 25px 0px;
 }
 
-.skill span, .skill span font {
+.skill i, .skill i font, .skill span, .skill span font {
 	color: var(--secondary-color);
 	padding-bottom: 5px;
 	font-size: 32px;
@@ -543,6 +543,23 @@ nav ul li a:hover {
 /* --------------HOME-------------- */
 
 /* --------------CONTACT-------------- */
+
+.contact-me {
+	background-color: var(--gray-2);
+	height: 220px;
+	width: 100%;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.contact-me h1 {
+	font-family: Poppins-SemiBold;
+	font-size: clamp(24px, 48px, 2em);
+	color: var(--white-1);
+	text-align: center;
+	width: 100%;
+	margin-top: 130px;
+	display: inline-block;
+}
 
 .contact-section {
 	display: flex;
