@@ -120,12 +120,20 @@ p {
 	text-decoration: none;
 	text-align: center;
 }
+	.section-footer-1 i:hover {
+		color: var(--secondary-color);
+		transition: color .8s;
+	}
 
 .section-footer-2 p, .section-footer-2 p font {
 	color: var(--white-1);
 	display: block;
 	text-align: center;
 	font-size: 14px;	
+}
+
+.section-footer-2 span, .section-footer-2 span font {
+	color: #ff4949;
 }
 /* --------------FOOTER-------------- */
 
@@ -343,7 +351,7 @@ nav ul li a:hover {
 
 .whatido{
 	flex: 1;
-	height: 340px;
+	height: clamp(260px, 8em, 340px);
 	min-width: 380px;
 	text-align: center;
 	margin: 10px;
@@ -434,7 +442,7 @@ nav ul li a:hover {
 	text-align: center;
 	margin: 10px;
 	min-width: 380px;
-	height: 350px;
+	height: clamp(250px, 16em, 340px);
 	padding: 12px 8px;
 	background-color: var(--white-1);
 	border-radius: 8px;
@@ -590,7 +598,7 @@ nav ul li a:hover {
 	padding: 18px 0;
 }
 
-.contact-box a:hover {
+.contact-box a:hover, .contact-box p:hover {
 	color: var(--primary-color);
 	transition: color .8s;
 }
