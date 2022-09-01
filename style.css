@@ -271,7 +271,6 @@ nav ul li {
 	#contact-btn:hover, #contact-btn font font:hover {
 		background-color: var(--primary-color);
 		color: var(--white-1);
-		transition: color .8s, background .8s;
 	}
 }
 /* --------------HEADER-------------- */
