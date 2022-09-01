@@ -386,6 +386,13 @@ nav ul li {
 	color: var(--gray-2);
 }
 
+#whatido-p, #whatido-p font font {
+	font-family: Poppins-SemiBold, sans-serif;
+	font-size: 25px;
+	margin: 10px 0 14px 0;
+	color: var(--gray-2);
+}
+
 .whatido p:nth-child(3) {
 	font-size: 18px;
 	font-family: Roboto, sans-serif;
