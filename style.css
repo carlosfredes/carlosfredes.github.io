@@ -125,15 +125,16 @@ p {
 		transition: color .8s;
 	}
 
-.section-footer-2 p, .section-footer-2 p font {
+#madeby, #madeby font font {
 	color: var(--white-1);
-	display: block;
+	display: inline-block;
 	text-align: center;
 	font-size: 14px;	
 }
 
-.section-footer-2 p span, .section-footer-2 p span font {
+#heart {
 	color: #ff4949;
+	display: inline-block;
 }
 /* --------------FOOTER-------------- */
 
@@ -165,7 +166,7 @@ nav ul li {
 	margin: 15px 15px;
 }
 
-nav ul li a {
+#home-btn, #home-btn font font, #cv-btn, #cv-btn font font {
 	color: var(--gray-2);
 	font-size: 14px;
 	font-family: Poppins-SemiBold, sans-serif;
@@ -192,26 +193,31 @@ nav ul li a {
 	display: none;
 }
 
-nav ul li a:hover {
+#home-btn:hover, #home-btn font font:hover, #cv-btn:hover, #cv-btn font font:hover {
 	color: var(--white-1);
 	background-color: var(--gray-2);
-	transition: color .8s, background .8s;
 }
 
-.contact {
-	padding: 6px 11px;
+#contact-btn-2 {
+	border: 1px solid var(--gray-2);
+	border-radius: 8px;
+	margin: 0;
+	padding: 2px;
+}
+
+	#contact-btn-2:hover {
+		border: 1px solid var(--primary-color);
+	}
+
+#contact-btn, #contact-btn font font {
 	color: var(--gray-2);
 	font-size: 14px;
 	font-family: Poppins-SemiBold, sans-serif;
-	border: 1px solid var(--gray-2);
-	border-radius: 8px;
+	padding: 8px 11px;
 }
 
-	.contact:hover {
+	#contact-btn:hover, #contact-btn font font:hover {
 	color: var(--primary-color);
-	background: none;
-	border: 1px solid var(--primary-color);
-	transition: color .8s,border .8s;
 	}
 
 @media (max-width: 952px) {
@@ -249,7 +255,7 @@ nav ul li a:hover {
 		line-height: 30px;
 	}
 
-	nav ul li a {
+	#home-btn, #home-btn font font, #cv-btn, #cv-btn font font {
 		font-size: 20px;
 	}
 
@@ -257,12 +263,12 @@ nav ul li a:hover {
 		left: 0;
 	}
 
-	.contact {
+	#contact-btn, #contact-btn font font {
 		font-size: 20px;
 		border: none;
 	}
 
-	.contact:hover {
+	#contact-btn:hover, #contact-btn font font:hover {
 		background-color: var(--primary-color);
 		color: var(--white-1);
 		transition: color .8s, background .8s;
@@ -286,10 +292,11 @@ nav ul li a:hover {
 	place-content: center;
 	text-align: center;
 	user-select: none;
-}
-.main h1 {
-	color: var(--white-1);
 	background-color: rgba(0, 0, 0, 0.2);
+	width: 100%;
+}
+#hello, #hello font font{
+	color: var(--white-1);
 	font-family: SourceCodePro, monospace;
 	cursor: text;
 }
@@ -338,7 +345,7 @@ nav ul li a:hover {
 	font-size: 34px;
 }
 
-.services p, .services p font {
+#services-p, #services-p font font{
 	margin: 20px 2px 50px 2px;
 	font-family: Raleway, sans-serif;
 	font-size: 24px;
@@ -366,7 +373,7 @@ nav ul li a:hover {
 	color: var(--primary-color);
 }
 
-.whatido p {
+.whatido p:nth-child(2) {
 	font-family: Poppins-SemiBold, sans-serif;
 	font-size: 25px;
 	margin: 10px 0 14px 0;
@@ -557,21 +564,35 @@ nav ul li a:hover {
 
 /* --------------CONTACT-------------- */
 
-.contact-me {
+.contact-me-div {
 	background-color: var(--gray-2);
 	height: 220px;
 	width: 100%;
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	z-index: 2;
+	display: inline-block;
 }
 
-.contact-me h1 {
+#contact-me-h1 {
 	font-family: Poppins-SemiBold;
 	font-size: clamp(24px, 48px, 2em);
 	color: var(--white-1);
 	text-align: center;
+	margin-top: 128px;
 	width: 100%;
-	margin-top: 130px;
 	display: inline-block;
+	z-index: 3;
+}
+
+#contact-me-h1 font font {
+	font-family: Poppins-SemiBold;
+	font-size: clamp(24px, 48px, 2em);
+	color: var(--white-1);
+	text-align: center;
+	margin-top: -15px;
+	width: 100%;
+	display: inline-block;
+	z-index: 4;
 }
 
 .contact-section {
@@ -603,7 +624,14 @@ nav ul li a:hover {
 	padding: 18px 0;
 }
 
-.contact-box a:hover, .contact-box p:hover {
+#mail, #mail font font {
+	font-family: Poppins-SemiBold, sans-serif;
+	color: var(--gray-2);
+	font-size: 18px;
+	padding: 18px 0;
+}
+
+.contact-box a:hover, .contact-box a font font:hover, .contact-box p:hover, .contact-box p font font:hover {
 	color: var(--primary-color);
 	transition: color .8s;
 }
