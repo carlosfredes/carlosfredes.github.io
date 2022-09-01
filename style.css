@@ -351,7 +351,7 @@ nav ul li a:hover {
 
 .whatido{
 	flex: 1;
-	height: clamp(260px, 8em, 340px);
+	height: fit-content(min(240px), max(360px), 30vh);
 	min-width: 380px;
 	text-align: center;
 	margin: 10px;
@@ -369,7 +369,7 @@ nav ul li a:hover {
 .whatido p {
 	font-family: Poppins-SemiBold, sans-serif;
 	font-size: 25px;
-	margin: 10px 14px 0;
+	margin: 10px 0 14px 0;
 	color: var(--gray-2);
 }
 
@@ -413,6 +413,7 @@ nav ul li a:hover {
 .skill p, .skill p font {
 	font-size: 20px;
 	margin-bottom: 0px;
+	margin: 10px 0px;
 }
 
 .projects {
@@ -442,7 +443,7 @@ nav ul li a:hover {
 	text-align: center;
 	margin: 10px;
 	min-width: 380px;
-	height: clamp(250px, 16em, 340px);
+	height: fit-content(min(275px), max(340px), 20vh);
 	padding: 12px 8px;
 	background-color: var(--white-1);
 	border-radius: 8px;
@@ -542,9 +543,13 @@ nav ul li a:hover {
 	}
 
 	.project {
-		min-width: 250px;
+		min-width: 100%;
 		margin: 20px 0px;
 		border-radius: 0px;
+	}
+
+	.project p {
+		margin: 14px 0 10px 0;
 	}
 
 }
@@ -580,7 +585,7 @@ nav ul li a:hover {
 	padding: 30px;
 	text-align: center;
 	min-width: 310px;
-	height: 230px;
+	height: clamp(190px, 210px, 16rem);
 	background-color: var(--white-1);
 	border-radius: 8px;
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -605,7 +610,8 @@ nav ul li a:hover {
 
 @media (max-width: 1060px) {
 	.contact-box {
-		margin: 80px 25px;
+		margin: 80px 0px;
+		min-width: 100%;
 	}
 }
 
