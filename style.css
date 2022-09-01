@@ -214,6 +214,7 @@ nav ul li {
 	font-size: 14px;
 	font-family: Poppins-SemiBold, sans-serif;
 	padding: 8px 11px;
+	border-radius: 8px;
 }
 
 	#contact-btn:hover, #contact-btn font font:hover {
@@ -265,10 +266,16 @@ nav ul li {
 
 	#contact-btn, #contact-btn font font {
 		font-size: 20px;
-		border: none;
 	}
 
-	#contact-btn:hover, #contact-btn font font:hover {
+	#contact-btn-2 {
+		border: none;
+	}
+		#contact-btn-2:hover {
+			border: none;
+		}
+
+	#contact-btn:hover, #contact-btn font font:hover{
 		background-color: var(--primary-color);
 		color: var(--white-1);
 	}
