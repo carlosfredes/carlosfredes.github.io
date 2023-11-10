@@ -39,6 +39,13 @@ p {
 
 /* Fonts */
 @font-face {
+	font-family: Material Symbols Outlined;
+	src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v148/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHeejbdhzrA.woff2);
+	font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
 	font-family: Poppins;
 	src: url('./assets/fonts/Poppins.ttf') format('truetype');
 	font-display: swap;
