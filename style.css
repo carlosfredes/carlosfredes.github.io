@@ -323,7 +323,7 @@ nav ul li {
 }
 	.anim-typewriter {
 		animation:
-		 typewriter 4s steps(25) 1s 1 normal both;
+		typewriter 4s steps(25) 1s 1 normal both;
 	}
 
 	@keyframes typewriter {
@@ -467,7 +467,8 @@ nav ul li {
 }
 
 .project img {
-	height: 8rem;
+	height: auto;
+	max-width: 135px;
 }
 
 .project h3 {
