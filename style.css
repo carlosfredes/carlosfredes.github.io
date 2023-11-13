@@ -456,8 +456,8 @@ nav ul li {
 }
 
 .project img {
-	height: auto;
-	max-width: 135px;
+	max-height: 120px;
+	max-width: 120px;
 }
 
 .project h3 {
