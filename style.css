@@ -29,22 +29,26 @@ p {
 }
 
 :root {
-	--primary-color: #007BFF;
+	--primary-color: #0055B8;
+	--svg-primary-color: invert(21%) sepia(93%) saturate(2079%) hue-rotate(199deg) brightness(93%) contrast(107%);
 	--secondary-color: #00B2FF;
+	--svg-secondary-color: invert(42%) sepia(99%) saturate(958%) hue-rotate(169deg) brightness(103%) contrast(107%);
 	--white-1: #FFF;
+	--svg-white-1: invert(100%) sepia(0%) saturate(7500%) hue-rotate(32deg) brightness(116%) contrast(106%);
 	--white-2: #F9F9F9;
+	--svg-white-2: invert(100%) sepia(0%) saturate(7461%) hue-rotate(141deg) brightness(127%) contrast(95%);
 	--gray-1: #595959;
+	--svg-gray-1: invert(35%) sepia(0%) saturate(1%) hue-rotate(151deg) brightness(96%) contrast(92%);
 	--gray-2: #191919;
+	--svg-gray-2: invert(0%) sepia(26%) saturate(4618%) hue-rotate(74deg) brightness(114%) contrast(80%);
 }
 
 /* Fonts */
 @font-face {
-	font-family: Material Symbols Outlined;
-	src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v148/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHeejbdhzrA.woff2);
+	font-family: Roboto;
+	src: url('./assets/fonts/Roboto-Light.ttf') format('truetype');
 	font-display: swap;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @font-face {
 	font-family: Poppins;
 	src: url('./assets/fonts/Poppins.ttf') format('truetype');
@@ -80,7 +84,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(to bottom, #007BFF 3%, #00B2FF 97%);
+	background: linear-gradient(to bottom, #0055B8 3%, #00B2FF 97%);
 	border: 5px solid var(--gray-2);
 	border-radius: 8px;
 }
@@ -117,22 +121,14 @@ p {
 		transition: background .8s;
 	}
 
-	.button i {
-		color: var(--white-1);
+	.button img {
+		filter: var(--svg-white-1);
 	}
 
-.section-footer-1 i {
-	margin: 65px 0 25px 0;
-	font-size: 24px;
-	display: block;
-	color: var(--white-1);
-	text-decoration: none;
-	text-align: center;
+.section-footer-1 img {
+	margin: 25px 0;
+	filter: var(--svg-white-1);
 }
-	.section-footer-1 i:hover {
-		color: var(--secondary-color);
-		transition: color .8s;
-	}
 
 #madeby, #madeby font font {
 	color: var(--white-1);
@@ -186,8 +182,8 @@ nav ul li {
 	display: none;
 }
 
-.checkbtn span {
-	font-size: 40px;
+.checkbtn img {
+	filter: var(--svg-gray-color);
 }
 
 #check {
@@ -197,6 +193,7 @@ nav ul li {
 #home-btn:hover, #home-btn font font:hover, #cv-btn:hover, #cv-btn font font:hover {
 	color: var(--white-1);
 	background-color: var(--gray-2);
+	transition: background .6s, color .6s;
 }
 
 #contact-btn-2 {
@@ -208,6 +205,7 @@ nav ul li {
 
 	#contact-btn-2:hover {
 		border: 1px solid var(--primary-color);
+		transition: border .6s;
 	}
 
 #contact-btn, #contact-btn font font {
@@ -219,20 +217,9 @@ nav ul li {
 }
 
 	#contact-btn:hover, #contact-btn font font:hover {
-	color: var(--primary-color);
+		color: var(--primary-color);
+		transition: color .6s;
 	}
-
-@media (max-width: 952px) {
-	.logo {
-		width: 60px;
-		height: 60px;
-		padding-left: 0px;
-		margin-left: 0px;
-		align-items: center;
-		object-fit: scale-down;
-		position: absolute;
-	}
-}
 
 @media (max-width: 858px) {
 	.checkbtn {
@@ -279,6 +266,7 @@ nav ul li {
 	#contact-btn:hover, #contact-btn font font:hover{
 		background-color: var(--primary-color);
 		color: var(--white-1);
+		transition: background .6s, color .6s;
 	}
 }
 /* --------------HEADER-------------- */
@@ -376,9 +364,8 @@ nav ul li {
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.whatido span {
-	font-size: 90px;
-	color: var(--primary-color);
+.whatido img {
+	filter: var(--svg-primary-color);
 }
 
 .whatido p:nth-child(2) {
@@ -425,10 +412,9 @@ nav ul li {
 	margin: 25px 0px;
 }
 
-.skill i, .skill i font, .skill span, .skill span font {
-	color: var(--secondary-color);
+.skill img {
+	filter: var(--svg-secondary-color);
 	padding-bottom: 5px;
-	font-size: 32px;
 	vertical-align: middle;
 }
 
@@ -631,19 +617,11 @@ nav ul li {
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.contact-box i {
-	color: var(--primary-color);
-	font-size: 50px;
+.contact-box img {
+	filter: var(--svg-primary-color);
 }
 
 .contact-box h3 {
-	font-family: Poppins-SemiBold, sans-serif;
-	color: var(--gray-2);
-	font-size: 18px;
-	padding: 18px 0;
-}
-
-#mail, #mail font font {
 	font-family: Poppins-SemiBold, sans-serif;
 	color: var(--gray-2);
 	font-size: 18px;
